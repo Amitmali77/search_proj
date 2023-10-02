@@ -6,7 +6,7 @@ export default function Datadescpage()
 {
     const params =useParams();
     const[product,setproduct]=useState([]);
-    const[options,setoptions]=useState([]);
+    const[options,setChangesOptions]=useState([]);
     
     useEffect(()=>{
         const id=parseInt(params.id);
