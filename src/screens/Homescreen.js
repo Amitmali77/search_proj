@@ -12,7 +12,7 @@ export default function Homescreen() {
             .then(res => {
                 setproducts(res.data);
             }).catch(err => {
-                console.log(err)
+                alert(err)
             })
     }
 
@@ -29,7 +29,7 @@ export default function Homescreen() {
                     getAllProducts();
                 }
             }).catch(err=>{
-                console.log(err)
+                alert(err)
             })
         }      
     }
