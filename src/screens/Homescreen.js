@@ -6,6 +6,7 @@ import axios from 'axios'
 export default function Homescreen() {
     const[products, setproducts] = useState([])
     const[searchkey,setsearchKey]=useState('')
+    const[errorMsg,setErrorMsg]=useState('')
 
     const getAllProducts=()=>{
         axios.get("http://localhost:8000/api/v1/getProducts")
